@@ -19,12 +19,13 @@ variable "inaccount_scanner_account_id" {
 variable "role_external_id" {
     description = "Role external ID. We will be supplied from Orca."
     type = string
+    default = "cf8126cb-097a-44d0-9561-007b07f68af7"
 }
 
 variable "secrets_manager_access" {
     description = "Whether to attach SecretsManager policy to Orca's role. Default: true"
     type = bool
-    default = true
+    default = false
 }
 
 variable "aws_partition" {
